@@ -1,4 +1,4 @@
-# Diagrama-Entidade-Relacionamento
+# Diagrama Entidade Relacionamento
 
 ### Realização de atividade da DIO para o Bootcamp Database Experience
 
