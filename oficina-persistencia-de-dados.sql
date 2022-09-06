@@ -1,7 +1,7 @@
 			-- cnpj: char(14), razao_social: varchar(45), endereço: varchar(65), contato: varchar(10)
 INSERT INTO oficina (cnpj, razao_social, endereço, contato)
 			VALUES	('00112101000139', 'Oficina da Flo', 'Rota 66 - Radiator Springs', '2125552300');
-                    select * from oficina;
+                   -- select * from oficina;
             
             -- pnome: varchar(25), snome: varchar(60), cpf: char(11), cnpj: char(14), telefone: varchar(14), email: varchar(25), endereço: varchar(65)
 INSERT INTO cliente (pnome, snome, cpf, cnpj, telefone, email, endereço)
@@ -17,7 +17,7 @@ INSERT INTO cliente (pnome, snome, cpf, cnpj, telefone, email, endereço)
                   ('John', 'Petrucci', '55566677789', NULL, '922223654', 'petrucci@gprogmail.com', 'R. Fidalga, 531 - Pinheiros, São Paulo - SP'),
                   ('SPClassicos', 'Car Shop', NULL, '10147874000125', '33335521', 'classicossp@carspmail.com', 'Avenida Pacaembu 5320 - Barra Funda, São Paulo - SP'),
                   ('MG Classsic Car Studio', 'Car Studio', NULL, '10119874000139', '33101234', 'mgclassic@carmail.com', 'Av. Teresa Cristina, 12892 - Belo Horizonte - MG');
-				select * from cliente;
+				-- select * from cliente;
                 
             -- placa: char(8), marca: varchar(15), modelo: varchar(15), servico: varchar(250)
 INSERT INTO veiculo (placa, marca, modelo, servico)
@@ -104,16 +104,16 @@ INSERT INTO avaliacao (avlIdOficina, avlIdCliente, avlIdMecanico, avlIdveiculo, 
                     (1, 12, 2, 12, 28, 2, 'FKE7A004', 'Customização', 1, '2022-09-01', '2022-09-07');
 				
 			-- (osValor - float, osPaga - boolean, observacoes - varchar(250)
-INSERT INTO os (osIdveiculo, osIdcliente, osIdoficina, osIdmecanico, osIdservico, osValor, osPaga, observacoes)
-			VALUES	(1, 1, 1, 4, 4, 5300, 1, 'Serviçõs Realizados: Funilaria completa. Veículo entregue no prazo.'),
-					(2, 2, 1, 3, 3, 2300, 1, 'Novo Sistema Multimídia Instalado e testado. Veículo entregue no prazo.'),
-					(3, 3, 1, 5, 5, 26200, 0, 'Aguardando autorização para comprar novo motor.'),
-					(4, 4, 1, 5, 5, 4400, 1, 'Motor na restauração restaurado, virabrequim pronto para ser trocado.'),
-					(5, 5, 1, 7, 7, 5100, 1, 'Veículo em processo de instalação do novo interior'),
-					(6, 6, 1, 6, 6, 0, 1, 'Veículo em processo de preparação para polimento'),
-					(7, 7, 1, 3, 3, 6450, 1, 'Direção elétrica instalada. Veículo entrege no prazo'),
-					(8, 8, 1, 7, 7, 4000, 1, 'Removida a tapeçaria antiga iniciado o processo de limpeza'),
-					(9, 9, 1, 6, 6, 6450, 1, 'Restauração do interior concluida. Veículo pronto para entrega'),
-					(10, 10, 1, 1, 1, 2180, 1, 'Veículo em processo de remoção dos frisos antigos'),
-					(11, 11, 1, 2, 2, 4000, 1, 'Customização concluída. Retoques finais.'),
-					(12, 12, 1, 2, 2, 2355, 1, 'Customização em 90%');
+INSERT INTO os (idOsAvaliacao, osValor, osPaga, observacoes)
+			VALUES	(1, 5300, 1, 'Serviçõs Realizados: Funilaria completa. Veículo entregue no prazo.'),
+					(2, 2300, 1, 'Novo Sistema Multimídia Instalado e testado. Veículo entregue no prazo.'),
+					(3, 26200, 0, 'Aguardando autorização para comprar novo motor.'),
+					(4, 4400, 1, 'Motor na restauração restaurado, virabrequim pronto para ser trocado.'),
+					(5, 5100, 1, 'Veículo em processo de instalação do novo interior'),
+					(6, 0, 1, 'Veículo em processo de preparação para polimento'),
+					(7, 6450, 1, 'Direção elétrica instalada. Veículo entrege no prazo'),
+					(8, 4000, 1, 'Removida a tapeçaria antiga iniciado o processo de limpeza'),
+					(9, 6450, 1, 'Restauração do interior concluida. Veículo pronto para entrega'),
+					(10, 2180, 1, 'Veículo em processo de remoção dos frisos antigos'),
+					(11, 4000, 1, 'Customização concluída. Retoques finais.'),
+					(12, 2355, 1, 'Customização em 90%');

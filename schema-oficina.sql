@@ -1,4 +1,6 @@
+
 -- Database Oficina
+
 CREATE DATABASE Oficina;
 USE Oficina;
 
@@ -83,21 +85,12 @@ CONSTRAINT fk_aval_servicos FOREIGN KEY (avlIdservicos) REFERENCES servicos (idS
 
 -- Tabela Ordem de Serviço
 CREATE TABLE os	(
-idOs	 		INT,
-osIdveiculo		INT,
-osIdcliente		INT,
-osIdoficina		INT,
-osIdmecanico	INT,
-osIdservico		INT,
+idOs			INT AUTO_INCREMENT PRIMARY KEY,
+idOsAvaliacao	INT,
 osValor			FLOAT,
 osPaga			BOOLEAN DEFAULT 0,
 observacoes		VARCHAR(250),
-CONSTRAINT fk_os_avaliacao FOREIGN KEY (IdOs) REFERENCES avaliacao (idAvaliacao),
-CONSTRAINT fk_os_veiculo FOREIGN KEY (osIdveiculo) REFERENCES avaliacao (avlIdveiculo),
-CONSTRAINT fk_os_cliente FOREIGN KEY (osIdcliente) REFERENCES avaliacao (avlIdCliente),
-CONSTRAINT fk_os_oficina FOREIGN KEY (osIdoficina) REFERENCES avaliacao (avlIdOficina),
-CONSTRAINT fk_os_mecanico FOREIGN KEY (osIdmecanico) REFERENCES avaliacao (avlIdMecanico),
-CONSTRAINT fk_os_servico FOREIGN KEY (osIdservico) REFERENCES avaliacao (avlIdservicos)
+CONSTRAINT fk_os_avaliacao FOREIGN KEY (idOsAvaliacao) REFERENCES avaliacao (idAvaliacao)
 );
 
 SHOW TABLES;
