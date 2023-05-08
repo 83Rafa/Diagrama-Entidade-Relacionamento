@@ -10,3 +10,6 @@
   
 3 - Persistindo e Recuperado Dados a partir de Consultas SQL no Banco de Dados. Refinado o banco a partir do diagrama, persistidas as informações para consultas e criadas queries para realizar as consultas.
   - [Diagrama E-commerce Com Dados Persistidos E Queries](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/tree/Diagrama-E-commerce-Com-Dados-Persistidos-E-Queries)
+  
+4 - Criação de índices para consultas para o cenário de company com as perguntas (queries sql) para recuperação de informações. Sendo assim, dentro do script será criado os índices com base na consulta SQL. 
+  - [Index & Procedure para banco E-commerce](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/indices_e_procedures.sql)
