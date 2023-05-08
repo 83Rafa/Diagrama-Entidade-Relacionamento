@@ -116,7 +116,6 @@ BEGIN
     IF p_action = "DELETE" THEN
 			DELETE FROM product
 			WHERE product_name=p_product_name;
-            SELECT 'Produto apagado com sucesso' AS Message;
             SELECT * FROM 	product;
     END IF;
 END $$
