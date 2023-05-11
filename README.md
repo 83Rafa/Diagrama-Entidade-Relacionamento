@@ -13,3 +13,6 @@
   
 4 - Criação de índices para consultas para o cenário de company com as perguntas (queries sql) para recuperação de informações. Sendo assim, dentro do script será criado os índices com base na consulta SQL. 
   - [Index & Procedure para banco E-commerce](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/indices_e_procedures.sql)
+
+5 - Criação de permissões de acessos e Triggers BEFORE INSERT, UPDATE e DELETE
+  - [Acessos e Triggers](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/acessos_e_automatizacoes.sql)
