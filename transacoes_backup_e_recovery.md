@@ -9,5 +9,5 @@ Transaction definida dentro de uma procedure com verificação de erro.
 
 ### CODE 03 - Backup & Recovery
 - [Backup geral com routines](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_backup.sql)
-- [Backup parcial](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_no_data_backup.sql) - apenas strutura do DB
-- [Backup parcial](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_no_info_backup.sql) - sem a info estrutural do DB
+- [Backup parcial estrutural](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_no_data_backup.sql) 
+- [Backup parcial data](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_no_info_backup.sql) - sem a info estrutural do DB
