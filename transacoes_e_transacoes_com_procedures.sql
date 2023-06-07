@@ -91,5 +91,5 @@ WHERE id_supplier > 4;
 -- mysqldump --no-create-info -u root -p ecommerce > ecommerce_no_info_backup.sql
 
 -- Recovery do banco de dados
--- mysqldump -u root -p < ecommerce_backup.sql
+-- mysql -u root -p < ecommerce_backup.sql
 
