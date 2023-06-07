@@ -89,3 +89,7 @@ WHERE id_supplier > 4;
 
 -- Backup parcial (dados persistidos)
 -- mysqldump --no-create-info -u root -p ecommerce > ecommerce_no_info_backup.sql
+
+-- Recovery do banco de dados
+-- mysqldump --routines --triggers -u root -p < ecommerce_backup.sql
+
