@@ -11,3 +11,5 @@ Transaction definida dentro de uma procedure com verificação de erro.
 - [Backup geral com routines](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_backup.sql)
 - [Backup parcial estrutural](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_no_data_backup.sql) 
 - [Backup parcial data](https://github.com/83Rafa/Diagrama-Entidade-Relacionamento/blob/main/ecommerce_no_info_backup.sql) - sem a info estrutural do DB
+- Recovery do banco de dados
+    - mysql -u root -p ecommerce < ecommerce_backup.sql
